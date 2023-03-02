@@ -1,0 +1,84 @@
+*{
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #323946;
+    color: #fff;
+  padding: 100px 0;
+   font-family: 'Satisfy', cursive;
+}
+
+.turn ,.score{
+    width: 360px;
+    height: 60px;
+    background-color: red;
+    margin:5px auto 0;
+ position: relative;
+ z-index: 0;
+    font-size: 50px;
+}
+.score{
+    font-size: 38px;
+}
+.score .x{
+padding-right:50px;
+}
+.no-click{
+    pointer-events: none; 
+}
+body > div{
+    width: 360px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px auto 0;
+}
+body > div .box{
+width: 120px; height: 120px;
+border: 2px solid rgba(255, 0, 0, 0.698);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 90px;
+cursor: pointer;
+}
+body > div .box:hover{
+    background: rgba(246, 153, 3, 0.598);
+}
+body > div .box:nth-child(1){
+    border-left: none;
+    border-top: none;
+}
+body > div .box:nth-child(2){
+    border-top: none;
+}
+body > div .box:nth-child(3){
+    border-top: none;
+    border-right: none;
+}
+body > div .box:nth-child(4){
+    border-left: none;
+}
+body > div .box:nth-child(6){
+    border-right: none;
+}
+body > div .box:nth-child(7){
+    border-bottom: none;
+    border-left: none;
+}
+body > div .box:nth-child(8){
+    border-bottom: none;
+}
+body > div .box:nth-child(9){
+    border-bottom: none;
+    border-right: none;
+}
+.win{
+    color: rgb(19, 142, 19);
+}
+
